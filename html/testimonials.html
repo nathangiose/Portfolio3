@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>testimonials</title>
+    <link rel="stylesheet" href="/styling/testimonials.css" />
+
+    <!-- Owl Carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="/styling/navbar.css" />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/07c41cdf40.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navbar-links">
+        <h1 id="h1"><strong>NJG</strong></h1>
+        <!-- Home Button -->
+        <button><li class="navbar-link">
+          <a href="/index.html" class="navbar-anchor">Home</a>
+        </li></button>
+        <!-- About Button -->
+        <button><li class="navbar-link">
+          <a href="/html/about.html" class="navbar-anchor">About</a>
+        </li></button>
+        <!-- Portfolio Button -->
+        <button><li class="navbar-link">
+          <a href="/html/portfolio.html" class="navbar-anchor">Portfolio</a>
+        </li></button>
+        
+        <!-- Contact Button -->
+        <button><li class="navbar-link">
+          <a href="/html/contact.html" class="navbar-anchor">Contact</a>
+        </li></button>
+      </ul>
+      <button class="navbar-button" onclick="toggleNavbar()">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+
+
+    <section>
+      <div class="owl-carousel">
+        <div class="owl-content">
+          <img
+            src="/images/jason-wandrag-nobg-2.png"
+            alt="photos"
+            style="width: 100px; height: 100px"
+          />
+          <div class="owl-items">
+            <h2 class="heading">Jason Wandrag</h2>
+            <h3 class="heading line-2">Lecturer</h3>
+            <q>
+              Nathan has a great sense of humour and is always taking part in
+              discussions. He can always be found putting a smile on the face of
+              his peers.
+            </q>
+          </div>
+        </div>
+        <div class="owl-content">
+          <img
+            src="/images/godwin-dzvapatsra.png"
+            alt="photos"
+            style="width: 100px; height: 100px"
+          />
+          <div class="owl-items">
+            <h2 class="heading">Godwin Dzvapatsra</h2>
+            <h3 class="heading line-2">Head of curriculum and learning</h3>
+            <q>
+              Nathan John is able to establish a principle, or work out a rule,
+              or suggest an accurate reason for failure or success. He
+              participates well in Python sessions and asks appropriate
+              questions. Godwin-Head of Curriculum and Learning
+            </q>
+          </div>
+        </div>
+        <div class="owl-content">
+          <img
+            src="/images/C8 Apr21 Mujaid Karriem (2).png"
+            alt="photos"
+            style="width: 100px; height: 100px"
+          />
+          <div class="owl-items">
+            <h2 class="heading">Mujaid Kariem</h2>
+            <h3 class="heading line-2">Full Stack Developer-colleague</h3>
+            <q>
+              Since I became acquainted with Nathan. I have known him to be a
+              person of sound moral character and conduct whose honesty and
+              integrity have always been unquestionably. He is a reliable,
+              hardworking, skillful individual who does not hesitate to
+              undertake any task assigned to him, no matter how onerous.
+            </q>
+          </div>
+        </div>
+        <div class="owl-content">
+          <img
+            src="/images/C8 Apr21 Tashwill Andries (2).png"
+            alt="photos"
+            style="width: 100px; height: 100px"
+          />
+          <div class="owl-items">
+            <h2 class="heading">Tashwill Andries</h2>
+            <h3 class="heading line-2">Full Stack Developer-colleague</h3>
+            <q>
+              Nathan John is a natural leader and always willing to step up to
+              any challenge thrown his way, With a wide knowledge of backend he
+              can bring any project to life. I do not doubt that he would make
+              an excellent backend developer.
+            </q>
+          </div>
+        </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          $(".owl-carousel").owlCarousel({
+            items: 1,
+            margin: 50,
+            loop: true,
+            stagePadding: 100,
+            dots: false,
+            responsive: {
+              0: {
+                items: 1,
+                stagePadding: 0,
+              },
+              500: {
+                items: 1,
+                // margin: 50,
+                // stagePadding: 100,
+              },
+            },
+            //   autoplay: true,
+          });
+        });
+      </script>
+    </section>
+  </body>
+  <!-- Javascript -->
+  <script src="/scripts/Script_.js"></script>
+</html>

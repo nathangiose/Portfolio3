@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/styling/navbar.css" />
+    <link rel="stylesheet" href="/styling/contact.css" />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/07c41cdf40.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navbar-links">
+        <h1 id="h1"><strong>NJG</strong></h1>
+                <!-- Home Button -->
+        <button><li class="navbar-link">
+          <a href="/index.html" class="navbar-anchor">Home</a>
+        </li></button>
+        <!-- About Button -->
+        <button><li class="navbar-link">
+          <a href="/html/about.html" class="navbar-anchor">About</a>
+        </li></button>
+        <!-- Portfolio Button -->
+        <button><li class="navbar-link">
+          <a href="/html/portfolio.html" class="navbar-anchor">Portfolio</a>
+        </li></button>
+        <!-- Testimonial Button -->
+        <button><li class="navbar-link">
+          <a href="/html/testimonials.html" class="navbar-anchor"
+            >Testimonials</a
+          >
+        </li></button>
+        
+      </ul>
+      <button class="navbar-button" onclick="toggleNavbar()">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+
+
+    <!-- CONTACT FORM -->
+    <section class="contact">
+      <h1 id="contact">CONTACT</h1>
+      <form
+        id="contact-form"
+        method="POST"
+        action="https://formspree.io/f/xwkalody"
+      >
+        <input
+          class="contact-input"
+          type="text"
+          name="full_name"
+          id="full_name"
+          placeholder="Name"
+          required
+        />
+        <input
+          class="contact-input"
+          type="tel"
+          name="contact_no"
+          id="contact_no"
+          placeholder="Contact No"
+          required
+        />
+        <input
+          class="contact-input"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email"
+          required
+        />
+        <textarea
+          class="contact-input"
+          name="message"
+          id="message"
+          placeholder="Type your message here"
+        ></textarea>
+        <button class="button" type="submit">Submit Information</button>
+      </form>
+      <section>
+      <iframe
+        id="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.669809111952!2d18.628763714692937!3d-34.02668558061301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc4f4e47841391%3A0x7e068292281d0d42!2s2%20Edna%20Cl%2C%20Lentegeur%2C%20Cape%20Town%2C%207786!5e0!3m2!1sen!2sza!4v1620975075029!5m2!1sen!2sza"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </section>
+    </section>
+  </body>
+  <!-- Javascript -->
+
+  <script src="/scripts/Script_.js"></script>
+</html>

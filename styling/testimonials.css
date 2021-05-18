@@ -1,0 +1,80 @@
+body {
+  background-color: black;
+  background-size: cover;
+  font-family: sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.owl-carousel {
+  overflow: hidden;
+
+  max-width: 80vw;
+}
+
+#h1 {
+
+  font-size: 20px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+}
+.owl-content {
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+
+  border: 1px solid none;
+  padding: 10px;
+  display: flex;
+  color: antiquewhite;
+}
+
+.owl-carousel .owl-item img {
+  height: auto;
+  object-fit: cover;
+  border-radius: 200px;
+  align-self: center;
+  margin: 30px;
+  flex-direction: column;
+}
+
+.owl-items {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.line-2 {
+  color: blue;
+}
+
+.line-2::after,
+.line-2::before {
+  content: "-";
+}
+
+@media screen and (max-width: 600px) {
+  .owl-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .owl-carousel .owl-item img {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+}
